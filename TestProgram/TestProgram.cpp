@@ -8,6 +8,7 @@ void function(void) {
 
 int main(int argc, char *argv[]) {
 	try {
+		__asm__ ("int $0x3");
 		function();
 	}
 	catch(std::exception) {
